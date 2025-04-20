@@ -1,0 +1,7 @@
+/home/adriano/NetBeansProjects/musica-api/src/main/java/com/devops/musica/api/model/Musica.java
+/home/adriano/NetBeansProjects/musica-api/src/main/java/com/devops/musica/api/services/MusicaService.java
+/home/adriano/NetBeansProjects/musica-api/src/main/java/com/devops/musica/api/controller/MusicaController.java
+/home/adriano/NetBeansProjects/musica-api/src/main/java/com/devops/musica/api/controller/PingPongController.java
+/home/adriano/NetBeansProjects/musica-api/src/main/java/com/devops/musica/api/repository/MusicaRepository.java
+/home/adriano/NetBeansProjects/musica-api/src/main/java/com/devops/musica/api/MusicaApiApplication.java
+/home/adriano/NetBeansProjects/musica-api/src/main/java/com/devops/musica/api/exception/MusicaAlreadyExistsException.java

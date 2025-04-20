@@ -1,0 +1,30 @@
+<ruleset xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         name="Custom Rules"
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+
+    <description>Regras personalizadas de qualidade de código</description>
+
+    <!-- Evita classes muito longas -->
+    <rule ref="category/java/design.xml/ExcessiveClassLength">
+        <properties>
+            <property name="minimum" value="500"/>
+        </properties>
+    </rule>
+
+    <!-- Evita métodos muito longos -->
+    <rule ref="category/java/design.xml/ExcessiveMethodLength">
+        <properties>
+            <property name="minimum" value="100"/>
+        </properties>
+    </rule>
+
+    <!-- Detecta código duplicado -->
+    <rule ref="category/java/bestpractices.xml/DuplicateCode"/>
+
+    <!-- Detecta variáveis não utilizadas -->
+    <rule ref="category/java/bestpractices.xml/UnusedLocalVariable"/>
+
+    <!-- Detecta uso de exceções genéricas -->
+    <rule ref="category/java/errorprone.xml/AvoidCatchingGenericException"/>
+</ruleset>

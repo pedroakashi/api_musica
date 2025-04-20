@@ -1,0 +1,38 @@
+
+stages:
+  - build
+  - test
+
+build:
+  stage: build
+  script:
+    - mvn clean package
+  artifacts:
+    paths:
+      - target/*.jar
+
+ping pong:
+  stage: test
+  script:
+    - curl -X GET http://localhost:8080/ping | grep "pong"
+
+testa ordenacao:
+  stage: test
+  script:
+    - curl -X POST "http://localhost:8080/musicas?nome=Undone%20thing"
+    - curl -X POST "http://localhost:8080/musicas?nome=One"
+    - curl -X POST "http://localhost:8080/musicas?nome=Still"
+    - curl -X PUT "http://localhost:8080/musicas/Undone%20thing/avaliar?avaliacao=5"
+    - curl -X PUT "http://localhost:8080/musicas/One/avaliar?avaliacao=4"
+    - curl -X PUT "http://localhost:8080/musicas/Still/avaliar?avaliacao=3"
+    - curl -X GET http://localhost:8080/musicas | grep '"nome":"Undone thing","avaliacao":5'
+
+cadastra musica:
+  stage: test
+  script:
+    - curl -X POST "http://localhost:8080/musicas?nome=NewSong" | grep '"avaliacao":0'
+
+
+
+    
+    

@@ -1,0 +1,34 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------------< [0;36mcom.devops:musica-api[0;1m >------------------------[m
+[[1;34mINFO[m] [1mBuilding musica-api 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.8:tree[m [1m(default-cli)[m @ [36mmusica-api[0;1m ---[m
+[[1;34mINFO[m] com.devops:musica-api:jar:1.0-SNAPSHOT
+[[1;34mINFO[m] +- org.springframework.boot:spring-boot-autoconfigure:jar:3.1.0:compile
+[[1;34mINFO[m] |  \- org.springframework.boot:spring-boot:jar:3.1.0:compile
+[[1;34mINFO[m] +- jakarta.persistence:jakarta.persistence-api:jar:3.2.0:compile
+[[1;34mINFO[m] +- org.springframework.data:spring-data-jpa:jar:3.1.12:compile
+[[1;34mINFO[m] |  +- org.springframework.data:spring-data-commons:jar:3.1.12:compile
+[[1;34mINFO[m] |  +- org.springframework:spring-orm:jar:6.0.20:compile
+[[1;34mINFO[m] |  |  \- org.springframework:spring-jdbc:jar:6.0.20:compile
+[[1;34mINFO[m] |  +- org.springframework:spring-context:jar:6.0.20:compile
+[[1;34mINFO[m] |  |  \- org.springframework:spring-expression:jar:6.0.20:compile
+[[1;34mINFO[m] |  +- org.springframework:spring-aop:jar:6.0.20:compile
+[[1;34mINFO[m] |  +- org.springframework:spring-tx:jar:6.0.20:compile
+[[1;34mINFO[m] |  +- org.springframework:spring-beans:jar:6.0.20:compile
+[[1;34mINFO[m] |  +- org.springframework:spring-core:jar:6.0.20:compile
+[[1;34mINFO[m] |  |  \- org.springframework:spring-jcl:jar:6.0.20:compile
+[[1;34mINFO[m] |  +- org.antlr:antlr4-runtime:jar:4.10.1:compile
+[[1;34mINFO[m] |  +- jakarta.annotation:jakarta.annotation-api:jar:2.0.0:compile
+[[1;34mINFO[m] |  \- org.slf4j:slf4j-api:jar:2.0.2:compile
+[[1;34mINFO[m] +- org.springframework:spring-web:jar:4.3.30.RELEASE:compile
+[[1;34mINFO[m] +- com.h2database:h2:jar:2.3.232:compile
+[[1;34mINFO[m] \- io.quarkus:quarkus-spring-data-jpa-api:jar:3.2:compile
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.944 s
+[[1;34mINFO[m] Finished at: 2025-04-17T17:37:29-03:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m

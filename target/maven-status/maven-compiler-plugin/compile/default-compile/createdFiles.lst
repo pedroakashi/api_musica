@@ -1,0 +1,7 @@
+com/devops/musica/api/controller/MusicaController.class
+com/devops/musica/api/repository/MusicaRepository.class
+com/devops/musica/api/exception/MusicaAlreadyExistsException.class
+com/devops/musica/api/controller/PingPongController.class
+com/devops/musica/api/model/Musica.class
+com/devops/musica/api/services/MusicaService.class
+com/devops/musica/api/MusicaApiApplication.class
