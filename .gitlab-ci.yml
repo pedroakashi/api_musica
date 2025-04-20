@@ -32,7 +32,19 @@ cadastra musica:
   script:
     - curl -X POST "http://localhost:8080/musicas?nome=NewSong" | grep '"avaliacao":0'
 
+deploy_aws:
+  stage: deploy_aws
+  script:
+    - aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
+    - aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
+    - aws configure set region $AWS_REGION
+    - aws elasticbeanstalk create-application-version --application-name musica-api --version-label v1 --source-bundle S3Bucket=$S3_BUCKET,S3Key=target/musica-api.jar
+    - aws elasticbeanstalk update-environment --environment-name musica-api-env --version-label v1
 
+deploy_heroku:
+  stage: deploy_heroku
+  script:
+    - dpl --provider=heroku --app=$HEROKU_APP_NAME --api-key=$HEROKU_API_KEY
 
     
     
